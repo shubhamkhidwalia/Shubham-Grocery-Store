@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shubham Grocery Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -24,14 +26,21 @@
         </div>
     </header>
 
-    <nav>
-        <ul>
-           <li><a href="#" id="home" class="nav-link">Home</a></li>
-<li><a href="#" id="shop" class="nav-link">Shop</a></li>
-<li><a href="#" id="cart" class="nav-link">Cart</a></li>
-<li><a href="#" id="account" class="nav-link">Account & Profile</a></li>
-
+    <nav class="navbar">
+        <div class="nav-logo">
+            <h2>Grocery Store</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="shop">Shop</a></li>
+            <li><a href="#" id="cart">Cart</a></li>
+            <li><a href="#" id="account">Account</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
 
     <div class="categories">
@@ -48,33 +57,286 @@
 
     <section class="product-grid">
         <!-- Product Cards -->
-        <div class="product-card">
-            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=900/app/images/products/sliding_image/116824a.jpg?ts=1689762986" alt="Product 1">
+        <div class="product-card snacks">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=900/app/images/products/sliding_image/116824a.jpg?ts=1689762986"
+                alt="Product 1">
             <h2>Kurkure Chilli-Chatka</h2>
             <p>Price: ₹10</p>
             <p>A perfect snack for Spicy food lovers.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
         </div>
 
-        <div class="product-card">
-            <img src="https://cdn.zeptonow.com/production///tr:w-600,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/4f6192ae-7806-4f43-b148-a44169cf2b0e.jpeg" alt="Product 2">
+        <div class="product-card snacks">
+            <img src="https://cdn.zeptonow.com/production///tr:w-600,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/4f6192ae-7806-4f43-b148-a44169cf2b0e.jpeg"
+                alt="Product 2">
             <h2>Kurkure Masala-Munch</h2>
             <p>Price: ₹10</p>
             <p>The best snacks on earth.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
         </div>
 
-        <div class="product-card">
-            <img src="https://www.indiaathome.com.au/cdn/shop/files/Kurkure_Green_Chutney_Style_90gm.jpg?v=1719820156" alt="Product 3">
+        <div class="product-card snacks">
+            <img src="https://www.indiaathome.com.au/cdn/shop/files/Kurkure_Green_Chutney_Style_90gm.jpg?v=1719820156"
+                alt="Product 3">
             <h2>Kurkure Green-Chutney</h2>
             <p>Price: ₹10</p>
             <p>Tastes like green sause.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
         </div>
 
-        <div class="product-card">
-            <img src="https://cdn.zeptonow.com/production///tr:w-600,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/c249f351-5d5a-4f9a-99d6-4a3614f52d29.jpeg" alt="Product 4">
+        <div class="product-card snacks">
+            <img src="https://cdn.zeptonow.com/production///tr:w-600,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/c249f351-5d5a-4f9a-99d6-4a3614f52d29.jpeg"
+                alt="Product 4">
             <h2>Kurkure Puffcorn</h2>
             <p>Price: ₹10</p>
             <p>The bestt in the market.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
         </div>
+
+        <div class="product-card coldDrinks">
+            <img src="https://m.media-amazon.com/images/I/71YBmiSj-cL.jpg"
+                alt="Product 5">
+            <h2>Coca-Cola</h2>
+            <p>Price: ₹50</p>
+            <p>Coca-Cola 1Ltr bottle at just @50rs</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card coldDrinks">
+            <img src="https://www.jiomart.com/images/product/original/491349790/mountain-dew-750-ml-product-images-o491349790-p491349790-0-202203150326.jpg?im=Resize=(1000,1000)"
+                alt="Product 6">
+            <h2>Mountain Dew</h2>
+            <p>Price: ₹40</p>
+            <p>750ml at just @40rs</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card coldDrinks">
+            <img src="https://www.jiomart.com/images/product/original/490002001/slice-mango-drink-1-2-l-product-images-o490002001-p490002001-0-202301121955.jpg"
+                alt="Product 7">
+            <h2>Tropicana Slice</h2>
+            <p>Price: ₹100</p>
+            <p>The mango drink in the market</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card coldDrinks">
+            <img src="https://m.media-amazon.com/images/I/51IRLdwmqcL.jpg"
+                alt="Product 8">
+            <h2>Limica</h2>
+            <p>Price: ₹35</p>
+            <p>Lumnoid Drink.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card toys">
+            <img src="https://i5.walmartimages.com/asr/2ffd24de-52ff-485a-88c4-18d84642c175.f7074fb3ac828773423b339983a18b8b.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+                alt="Product 9">
+            <h2>Kids inertance Car</h2>
+            <p>Price: ₹60</p>
+            <p>The bestt gift for your childern to keep them away from mobile.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card toys">
+            <img src="https://5.imimg.com/data5/ANDROID/Default/2022/7/OT/RE/XK/135373213/product-jpeg.jpg"
+                alt="Product 10">
+            <h2>Tractor</h2>
+            <p>Price: ₹180</p>
+            <p>Start feeling your dream from your childhood</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card toys">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/jn6ck280/toy-weapon/f/y/y/diwali-toy-gun-for-kids-black-in-color-diwali-pataka-gun-use-original-imaf9ru4phdruy5m.jpeg?q=90&crop=false"
+                alt="Product 11">
+            <h2>Toy Gun</h2>
+            <p>Price: ₹20</p>
+            <p>Best toy gun for kids in Diwali</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card toys">
+            <img src="https://5.imimg.com/data5/VQ/YL/MY-41435862/red-tennis-ball-500x500.jpg"
+                alt="Product 12">
+            <h2>Rubber Ball</h2>
+            <p>Price: ₹20</p>
+            <p>Best for kids</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card spices">
+            <img src="https://www.bigbasket.com/media/uploads/p/xxl/40051783_11-sunrise-powder-coriander.jpg"
+                alt="Product 13">
+            <h2>Dhaniya Powder</h2>
+            <p>Price: ₹20</p>
+            <p>The bestt in the market.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card spices">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1-qjyWeoWeXKD4iywsJiR4NQaI6Hxhb5KVA&s"
+                alt="Product 14">
+            <h2>Mirchi Powder</h2>
+            <p>Price: ₹20</p>
+            <p>The bestt in the market.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card spices">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS34jq97laATCmabSPKZrR5rI7C_xbkWIVi8A&s"
+                alt="Product 15">
+            <h2>Jeera</h2>
+            <p>Price: ₹10</p>
+            <p>The bestt in the market.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card spices">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoN404dmcn2B-DRLyzkTwdEtTV-4lOD3u2Bg&s"
+                alt="Product 16">
+            <h2>Haldi</h2>
+            <p>Price: ₹20</p>
+            <p>The bestt in the market.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card seasonalItems">
+            <img src="https://img.cdnx.in/65995/1697960890261_SKU-0112_0.jpg?"
+                alt="Product 17">
+            <h2>Pop Bomb</h2>
+            <p>Price: ₹10</p>
+            <p>Just hit the wall and boom</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card seasonalItems">
+            <img src="https://images.meesho.com/images/products/160960828/nzrux_512.webp"
+                alt="Product 18">
+            <h2>Toy Gun Diwali</h2>
+            <p>Price: ₹50</p>
+            <p>Use with Matchsticks</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card seasonalItems">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2020/12/XD/XW/JW/5230645/gripon-pistol-ring-cap-gun.png"
+                alt="Product 19">
+            <h2>Toy Gun-Diwali Cracker</h2>
+            <p>Price: ₹20</p>
+            <p>Harmfree toy gun for kids</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card seasonalItems">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/8/ML/IV/FP/58829788/15cm-electric-10pcs-box--500x500.jpg"
+                alt="Product 20">
+            <h2>Phuljhadi</h2>
+            <p>Price: ₹20</p>
+            <p>The bestt in the market.</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card smoke-products">
+            <img src="https://pbs.twimg.com/media/EKcMOD6U4AAhl_D?format=jpg&name=large"
+                alt="Product 21">
+            <h2>Gold-Flag</h2>
+            <p>Price: ₹10</p>
+            <p>Smoking Kills</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card smoke-products">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXHoIYvmAxx8GGeIpwe_gYkhBlPnpb1mRvMQ&s"
+                alt="Product 22">
+            <h2>Advance cigarette</h2>
+            <p>Price: ₹10</p>
+            <p>Avoid smoking</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card smoke-products">
+            <img src="https://tpackss.globaltobaccocontrol.org/sites/default/files/styles/500x500/public/pack_images/IND_DEL_L4_03_003_0_0_2_3.JPG?itok=Yqxa297z"
+                alt="Product 23">
+            <h2>Commander segret</h2>
+            <p>Price: ₹10</p>
+            <p>Avoid Smoking</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <div class="product-card smoke-products">
+            <img src="https://tpackss.globaltobaccocontrol.org/sites/default/files/styles/500x500/public/pack_images/IND_DEL_L3_11_001_0_0_2_3.JPG?itok=SY7t9G7n"
+                alt="Product 24">
+            <h2>Shiv Biri Bundle</h2>
+            <p>Price: ₹20</p>
+            <p>Smoking is harmful</p>
+            <div class="product-buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+ 
     </section>
 
     <footer>
@@ -83,4 +345,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
