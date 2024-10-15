@@ -56,27 +56,133 @@ h1 {
     font-weight: bold;
 }
 
-/* Navigation Menu */
-nav ul {
+/* Navbar Styling */
+.navbar {
+    margin-right: 0px;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    /* Light mode with slight transparency */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* When Dark Mode is Active */
+body.dark-mode .navbar {
+    background-color: rgba(34, 34, 34, 0.95);
+    /* Dark mode version */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.nav-logo h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .nav-logo h2 {
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
     gap: 30px;
     list-style: none;
-    margin-bottom: 20px;
 }
 
-.nav-link {
-text-decoration: none;
-color: #06c;
-transition: color 0.2s ease;
+.nav-links li {
+    padding: 10px;
 }
 
-.nav-link:hover {
-color: #03c;
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
-.nav-link:active {
-color: #06c;
+body.dark-mode .nav-links li a {
+    color: #fff;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #ff6347;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .hamburger .bar {
+    background-color: #fff;
+}
+
+/* Animated Hamburger */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    body.dark-mode .nav-links {
+        background-color: #222;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 20px 0;
+    }
 }
 
 /* Category Buttons */
@@ -115,6 +221,9 @@ color: #06c;
     padding: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  hieght: 500px;
+  width: 250px;
+    
 }
 
 .product-card:hover {
@@ -124,7 +233,7 @@ color: #06c;
 
 .product-card img {
     width: 100%;
-    height: 350px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -137,6 +246,49 @@ color: #06c;
 .product-card p {
     margin: 5px 0;
     color: #666;
+}
+
+/* Styling for the buttons container */
+.product-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Buy Button Styling */
+.buy-btn,
+.cart-btn {
+    background-color: #ff6347;
+    /* Tomato color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.buy-btn {
+    background-color: rgb(22, 22, 19);
+}
+
+.cart-btn {
+    background-color: rgba(103, 101, 101, 0.542);
+    color: black;
+}
+
+.buy-btn:hover {
+    background-color: green;
+    transform: translateY(-2px);
+}
+
+
+.cart-btn:hover {
+    background-color: #e5533d;
+    transform: translateY(-2px);
+    color: white;
 }
 
 footer {
