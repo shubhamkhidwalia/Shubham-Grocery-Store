@@ -5,7 +5,7 @@ const themeText = document.getElementById('theme-text');
 
 themeToggle.addEventListener('click', () => {
     themeToggle.classList.toggle('active');
-    
+
     if (themeToggle.classList.contains('active')) {
         themeIcon.textContent = "🌙";
         themeText.textContent = "Night Mode";
@@ -58,7 +58,7 @@ const translations = {
 
 langToggle.addEventListener('click', () => {
     langToggle.classList.toggle('active');
-    
+
     if (langToggle.classList.contains('active')) {
         langText.textContent = "हिन्दी";
         document.getElementById("home").textContent = translations.hindi.home;
@@ -90,4 +90,27 @@ langToggle.addEventListener('click', () => {
         document.getElementById("smoking").textContent = translations.english.smoking;
         document.getElementById("yourNeed").textContent = translations.english.yourNeed;
     }
+});
+// Toggle Dark/Light Mode (same as before)
+// ...
+
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+// Add event listeners for the buttons
+document.querySelectorAll('.cart-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        alert("Added to cart!");
+    });
+});
+
+document.querySelectorAll('.buy-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        alert("Proceeding to checkout...");
+    });
 });
